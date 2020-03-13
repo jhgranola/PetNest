@@ -5,6 +5,16 @@ PetNest is a developing web application designed to be a one stop shop for every
 
 -----
  
+## Table Of Contents
+
+- [1. User Stories](#user-stories)
+- [2. Use-Cases](#use-cases)
+- [3. Requirements](#requirements)
+- [4. Requirements Table](#requirements-table)
+- [5. Test Table](#test-table)
+
+-----
+
 ## User stories, use-cases, and requirements for PetNest Application.
 
 ### User Stories
