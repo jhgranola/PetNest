@@ -12,6 +12,7 @@ PetNest is a developing web application designed to be a one stop shop for every
 - [3. Requirements](#requirements)
 - [4. Requirements Table](#requirements-table)
 - [5. Test Table](#test-table)
+- [6. UI Wire Frame Diagrams(initial)](#UI-WireFrame)
 
 -----
 
@@ -140,3 +141,9 @@ Test ID | Req ID | Test Procedure | Status | Last Update (time) | Version
 3d | T-13 | Using test profile, favorite an animal. Analyze database to ensure animal is added to favorites under the users profile | Not Tested | N/A | 0.0.0
 3e | T-14 | Insert profanity into profile descrptions and messages. Ensure user is prompted to retype their statement. | Not Tested | N/A | 0.0.0
 3f | T-15 | With vendor account, ensure documentation based on location is required for verification | Not Tested | N/A | 0.0.0
+
+
+### Wire Frame Diagrams(Initial)
+
+
+[embed][wireframe Diagram(initial)](https://github.com/jhgranola/PetNest/blob/master/UI_Wireframe.pdf)[/embed]
