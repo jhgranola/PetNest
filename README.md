@@ -12,7 +12,7 @@ PetNest is a developing web application designed to be a one stop shop for every
 - [3. Requirements](#requirements)
 - [4. Requirements Table](#requirements-table)
 - [5. Test Table](#test-table)
-- [6. UI Wire Frame Diagrams(initial)](#UI-WireFrame)
+- [6. Wire Frame Diagrams(initial)](#wire-frame-diagrams(initial))
 
 -----
 
