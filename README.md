@@ -12,7 +12,7 @@ PetNest is a developing web application designed to be a one stop shop for every
 - [3. Requirements](#requirements)
 - [4. Requirements Table](#requirements-table)
 - [5. Test Table](#test-table)
-- [6. Wire Frame Diagrams(initial)](#wire-frame-diagrams(initial))
+- [6. Wire Frame Diagrams](#wire-frame-diagrams)
 
 -----
 
@@ -143,7 +143,8 @@ Test ID | Req ID | Test Procedure | Status | Last Update (time) | Version
 3f | T-15 | With vendor account, ensure documentation based on location is required for verification | Not Tested | N/A | 0.0.0
 
 
-### Wire Frame Diagrams(Initial)
+### Wire Frame Diagrams
 
 
-[embed][wireframe Diagram(initial)](https://github.com/jhgranola/PetNest/blob/master/UI_Wireframe.pdf)[/embed]
+
+[wireframe Diagram(initial)](https://github.com/jhgranola/PetNest/blob/master/UI_Wireframe.pdf)
