@@ -65,13 +65,13 @@ Given user action, when they favorite an animal, the shelter will be notified
 
 
 
-1a – User will create an account
+1a – Allow user to create an account
 
-1b – User will have to verify their account via email
+1b – Prompt user to verify their account via email
 
-1c – User will have to login, using email and password
+1c – Allow to login, using email and password
 
-1d – User will specify initial filters (they may be changed at any time)
+1d – Allow user to specify  filters
 
 1e – User will be directed to browsing pages
 
@@ -104,10 +104,10 @@ This table will organize requirements and keepy track of whats been implemented,
 
 Req ID | Requirement Description | Test ID | Test Method | Implemented | Tested
 --- | --- | --- | --- | --- | ---
-1a | User will create an account | T-1 | Demonstration | No | No
-1b | User will have to verify their account via email | T-2 | Inspection | No | No
-1c | User will have to login using email and password | T-3 | Demonstration | No | No
-1d | User will specify initial filters | T-4 | Analysis | No | No
+1a | Allow user to create an account | T-1 | Demonstration | No | No
+1b | Prompt to verify their account via email | T-2 | Inspection | No | No
+1c | Allow to login using email and password | T-3 | Demonstration | No | No
+1d | Allow user to specify filters | T-4 | Analysis | No | No
 1e | User will be directed to browsing pages | T-5 | Test | No | No
 2a | System will provide the page  | T-6 | Inspection | No | No
 2b | System will provide UI | T-7 | Test | No | No
