@@ -14,7 +14,6 @@ UserAge INT,
 UserGender char(20),
 AboutMe VARCHAR(200),
 PictureURL VARCHAR(50),
-IsVendor char(3),
 MaxDistance INTEGER,
 LocationID VARCHAR(70)
 PRIMARY KEY(UserID));
@@ -33,27 +32,32 @@ AnimalSex VARCHAR(10),
 AnimalWeight INT,
 IsSpayedOrNeutered VARCHAR(3),
 VaccinationUpToDate VARCHAR(20),
-GoodInHomeWith VARCHAR(50),
-AnimalAboutMe VARCHAR(200));
+AnimalAboutMe VARCHAR(200),
+OwnerID VARCHAR(20),
+FOREIGN KEY(OwnerID) REFERENCES UserProfile(UserID));
 
 ---------------------------------------------
 
 DROP TABLE IF EXISTS Locations
 
 CREATE TABLE Locations(
-LocationID VARCHAR(70),
-GPS FLOAT(32),
+LocationID INT,
 LocationName VARCHAR(128),
+Address1 VARCHAR(20),
+Address2 VARCHAR(20),
+City VARCHAR(10),
+ST char(2),
 PRIMARY KEY(LocationID));
 
 --------------------------------------------
 
-DROP TABLE IF EXISTS Likes
+DROP TABLE IF EXISTS Favorites
 
-CREATE TABLE Likes(
+CREATE TABLE Favorites(
 UserID INT,
 AnimalID INT,
-FavoriteID INT);
+FavoriteID INT,
+FOREIGN KEY(UserID) REFERENCES UserProfile(UserID));
 
 -------------------------------------------
 
@@ -64,7 +68,7 @@ MessageID VARCHAR(70),
 Recipient CHAR(70),
 MessageBody VARCHAR(500),
 MessageTimeStamp TIMESTAMP,
-ReportUser VARCHAR(70),
+ReportUser_UserID VARCHAR(70),
 PRIMARY KEY(MessageID));
 
 ------------------------------------------
@@ -72,6 +76,29 @@ PRIMARY KEY(MessageID));
 DROP TABLE IF EXISTS ReportUsers
 
 CREATE TABLE ReportUsers(
-USERID VARCHAR(70),
-ReasonID VARCHAR(70));
+UserID VARCHAR(70),
+ReportID INT,
+ReasonID VARCHAR(70),
+ReportResolved char(3));
 
+------------------------------------------
+
+DROP TABLE IF EXISTS Shelters
+
+CREATE TABLE Shelters(
+ShelterName VARCHAR(30),
+ShelterDescription VARCHAR(200),
+ShelterPhone INT,
+ShelterID INT,
+PRIMARY KEY(ShelterID));
+
+------------------------------------------
+
+DROP TABLE IF EXISTS AnimalLocator
+
+CREATE TABLE AnimalLocator(
+AnimalID INT,
+LocationID INT,
+DateTime INT,
+FOREIGN KEY(AnimalID) REFERENCES Animals(AnimalID),
+FOREIGN KEY(LocationID) REFERENCES Locations(LocationID));
