@@ -161,9 +161,7 @@ Test ID | Req ID | Test Procedure | Status | Last Update (time) | Version
 ### Relational Database Diagram
 
 
-
-![wireframe diagram main](https://github.com/jhgranola/PetNest/blob/master/PetNestRelationalDiagram.png)
-
+![image](https://github.com/jhgranola/PetNest/blob/master/PetNestDatabaseDiagram.PNG)
 
 ### Prototype Link
 
